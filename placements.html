@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placements | MCU Bhopal</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .placementsBox{
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+        }
+        .placementsBox h1{
+            margin: 20px 0px;
+            width: 100%;
+            font-size: 3em;
+            color: #002147;
+        }
+        .placementsBox h1::after{
+            content: "Our Placements";
+            position: absolute;
+            top: 75px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 80px;
+            color: transparent;
+            -webkit-text-stroke: 1px #00214777;
+            text-transform: uppercase;
+            white-space: nowrap;
+            letter-spacing: 5px;
+            z-index: -99;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="images/header.png">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a class="active" href="#">Placements</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="box">
+        <div class="placementsBox">
+            <center>
+                <h1>Our Placements</h1>
+                <div class="images">
+                    <img src="images/placement-media.jpg" alt="MCU Placements in Media Organisations">
+                    <img src="images/placement-it.jpg" alt="MCU Placements in IT Organisations">
+                </div>
+            </center>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright &copy; MCNUJC, Bhopal, 2022 | All Rights Reserved. </p>
+    </footer>
+</body>
+</html>
