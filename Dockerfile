@@ -1,4 +1,4 @@
-from node:20-alpine
+FROM node:20-alpine
 
 # Install dependencies
 RUN npm install -g serve
@@ -9,7 +9,7 @@ WORKDIR /app
 # Copy code files
 COPY . .
 
-EXPOSE 3000
+EXPOSE 80
 
 # Serve index.html with serve
-CMD ["serve", ".", "-l", "3000"]
+CMD ["serve", ".", "-l", "80"]
