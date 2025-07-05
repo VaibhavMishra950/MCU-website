@@ -1,214 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | MCU Bhopal</title>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css">
-    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
     <style>
-        .titleBox {
-            background-blend-mode: multiply;
-            background: #002147dd url('images/building.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            backdrop-filter: blur(5px);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+      .titleBox {
+        background-blend-mode: multiply;
+        background: #002147dd url("images/building.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        backdrop-filter: blur(5px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .titleBox h1 {
+        width: 75%;
+        text-align: center;
+        color: white;
+        font-size: 3em;
+        font-family: Outfit;
+        letter-spacing: 1px;
+        text-shadow: 0 0 20px #000;
+      }
+
+      .titleBox .link {
+        background: white;
+        color: #002147;
+        border: 2px solid white;
+        padding: 7px 14px;
+        margin-top: 20px;
+        text-decoration: none;
+        font-weight: 600;
+        border-radius: 25px;
+      }
+
+      .titleBox .link:hover i {
+        margin-left: 10px;
+      }
+
+      .titleBox::before {
+        content: "MCU";
+        width: 100%;
+        height: 90%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: -1;
+        color: transparent;
+        -webkit-text-stroke: 1px #fff3;
+        font-size: 27em;
+        font-weight: 900;
+      }
+
+      .qualityBox {
+        width: 80%;
+        margin: 30px auto;
+      }
+
+      .qualityBox h2 {
+        font-size: 2.5em;
+        margin-top: 20px;
+        color: #002147;
+        font-family: Outfit;
+      }
+
+      .qualityBox ul {
+        margin: 5px;
+        margin-left: 50px;
+        color: #262626;
+      }
+
+      .qualityBox ul li::marker {
+        content: "\2714\0020";
+      }
+
+      .qualityBox p {
+        margin: 5px;
+        margin-left: 30px;
+        width: 80%;
+        color: #262626;
+      }
+
+      .scroller {
+        width: 30px;
+        height: 30px;
+        border-left: 3px solid white;
+        border-bottom: 3px solid white;
+        transform: rotate(-45deg);
+        margin-top: 40px;
+        animation: fader 1s infinite;
+      }
+
+      .scroller::before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: -13px;
+        height: 100%;
+        width: 100%;
+        border-left: 3px solid white;
+        border-bottom: 3px solid white;
+        animation: fader 1s infinite;
+        animation-delay: 0.33s;
+      }
+
+      .scroller::after {
+        content: "";
+        position: absolute;
+        top: 20px;
+        left: -23px;
+        height: 100%;
+        width: 100%;
+        border-left: 3px solid white;
+        border-bottom: 3px solid white;
+        animation: fader 1s infinite;
+        animation-delay: 0.66s;
+      }
+
+      @keyframes fader {
+        0%,
+        100% {
+          border-color: #ffff;
         }
 
-        .titleBox h1 {
-            width: 75%;
-            text-align: center;
-            color: white;
-            font-size: 3em;
-            font-family: Bahnschrift;
-            letter-spacing: 1px;
-            text-shadow: 0 0 20px #000;
+        25%,
+        75% {
+          border-color: #fff8;
         }
 
-        .titleBox .link {
-            background: white;
-            color: #002147;
-            border: 2px solid white;
-            padding: 7px 14px;
-            margin-top: 20px;
-            text-decoration: none;
-            font-weight: 600;
-            border-radius: 25px;
+        50% {
+          border-color: #fff4;
         }
-
-        .titleBox .link:hover i {
-            margin-left: 10px;
-        }
-
-        .titleBox::before {
-            content: "MCU";
-            width: 100%;
-            height: 90%;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            z-index: -1;
-            color: transparent;
-            -webkit-text-stroke: 1px #fff3;
-            font-size: 27em;
-            font-weight: 900;
-        }
-
-        .qualityBox {
-            width: 80%;
-            margin: 30px auto;
-        }
-
-        .qualityBox h2 {
-            font-size: 2.5em;
-            margin-top: 20px;
-            color: #002147;
-            font-family: Bahnschrift;
-        }
-
-        .qualityBox ul {
-            margin: 5px;
-            margin-left: 50px;
-            color: #262626;
-        }
-
-        .qualityBox ul li::marker {
-            content: '\2714\0020';
-        }
-
-        .qualityBox p {
-            margin: 5px;
-            margin-left: 30px;
-            width: 80%;
-            color: #262626;
-        }
-
-        .scroller {
-            width: 30px;
-            height: 30px;
-            border-left: 3px solid white;
-            border-bottom: 3px solid white;
-            transform: rotate(-45deg);
-            margin-top: 40px;
-            animation: fader 1s infinite;
-        }
-
-        .scroller::before {
-            content: '';
-            position: absolute;
-            top: 10px;
-            left: -13px;
-            height: 100%;
-            width: 100%;
-            border-left: 3px solid white;
-            border-bottom: 3px solid white;
-            animation: fader 1s infinite;
-            animation-delay: 0.33s;
-        }
-
-        .scroller::after {
-            content: '';
-            position: absolute;
-            top: 20px;
-            left: -23px;
-            height: 100%;
-            width: 100%;
-            border-left: 3px solid white;
-            border-bottom: 3px solid white;
-            animation: fader 1s infinite;
-            animation-delay: 0.66s;
-        }
-
-        @keyframes fader {
-
-            0%,
-            100% {
-                border-color: #ffff;
-            }
-
-            25%,
-            75% {
-                border-color: #fff8;
-            }
-
-            50% {
-                border-color: #fff4;
-            }
-        }
-
-
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav>
-
-        <img src="images/header.png">
-        <ul>
-            <li><a class="active" href="#">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="courses.html">Courses</a></li>
-            <li><a href="departments.html">Departments</a></li>
-            <li><a href="placements.html">Placements</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
+      <img src="images/header.png" />
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="departments.html">Departments</a></li>
+        <li><a href="placements.html">Placements</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
     </nav>
     <div class="box">
-        <div class="titleBox">
-            <h1>Makhanlal Chaturvedi National University of Journalism and Communications,<br> Bhopal</h1>
-            <a href="https://mcu.ac.in/" target="_blank" class="link">Visit Official Website <i
-                    class="fa-duotone fa-circle-chevron-right"></i></a>
-            <a href="#qualityBox">
-                <div class="scroller"></div>
-            </a>
-        </div>
+      <div class="titleBox">
+        <h1>
+          Makhanlal Chaturvedi National University of Journalism and
+          Communications,<br />
+          Bhopal
+        </h1>
+        <a href="https://mcu.ac.in/" target="_blank" class="link"
+          >Visit Official Website
+          <i class="fa-duotone fa-circle-chevron-right"></i
+        ></a>
+        <a href="#qualityBox">
+          <div class="scroller"></div>
+        </a>
+      </div>
     </div>
     <div class="qualityBox" id="qualityBox">
+      <h2>VALUES</h2>
+      <ul>
+        <li>Academic excellence and integrity</li>
+        <li>Scholarly research and professional leadership</li>
+        <li>Integration of teaching, research and service</li>
+        <li>Individual and collective excellence</li>
+        <li>Diversity, equity, and social justice</li>
+        <li>Education of individuals across the life span</li>
+        <li>Collegiality and collaboration</li>
+        <li>Fostering good business ethics and social responsibility.</li>
+      </ul>
 
-        <h2>VALUES</h2>
-        <ul>
-            <li>Academic excellence and integrity</li>
-            <li>Scholarly research and professional leadership</li>
-            <li>Integration of teaching, research and service</li>
-            <li>Individual and collective excellence</li>
-            <li>Diversity, equity, and social justice</li>
-            <li>Education of individuals across the life span</li>
-            <li>Collegiality and collaboration</li>
-            <li>Fostering good business ethics and social responsibility.</li>
-        </ul>
+      <h2>MISSION</h2>
+      <p>
+        To transform the lives of all students by creating a distinctive
+        environment of intellectual rigor, research, creativity deep community
+        and engagement across innovative areas of Media, Communication,
+        Journalism, Management and IT to expand knowledge, raise awareness and
+        promote Humanistic values.
+      </p>
 
-        <h2>MISSION</h2>
-        <p>To transform the lives of all students by creating a distinctive
-            environment of intellectual rigor, research, creativity deep
-            community and engagement across innovative areas of Media,
-            Communication, Journalism, Management and IT to expand
-            knowledge, raise awareness and promote Humanistic values.
-        </p>
-
-        <h2>VISION</h2>
-        <p>To be recognized by effective academic environment,
-            excellence of our Programmes, our innovative research, desire
-            to be contributing partner to our community through our
-            empathetic involvement towards society and developing
-            students with balanced perspectives by preparing them for
-            effective leadership in the professional and spiritual dimensions
-            of life.
-        </p>
-
+      <h2>VISION</h2>
+      <p>
+        To be recognized by effective academic environment, excellence of our
+        Programmes, our innovative research, desire to be contributing partner
+        to our community through our empathetic involvement towards society and
+        developing students with balanced perspectives by preparing them for
+        effective leadership in the professional and spiritual dimensions of
+        life.
+      </p>
     </div>
     <footer>
-        <p>Copyright &copy; MCNUJC, Bhopal, 2022 | All Rights Reserved. </p>
+      <p>Copyright &copy; MCNUJC, Bhopal, 2022 | All Rights Reserved.</p>
     </footer>
-</body>
-
+  </body>
 </html>

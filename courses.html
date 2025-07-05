@@ -1,116 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Courses Offered | MCU Bhopal</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <style>
-        .box {
-            display: flex;
-            justify-content: center;
-        }
-        .coursesBox{
-            width: 80%;
-            display: flex;
-            flex-direction: column;
-        }
-        .coursesBox h1{
-            margin: 20px 0px;
-            width: 100%;
-            font-size: 3em;
-            color: #002147;
-        }
-        .coursesBox h1::after{
-            content: "Courses Offered in university";
-            position: absolute;
-            top: 75px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 80px;
-            color: transparent;
-            -webkit-text-stroke: 1px #00214777;
-            text-transform: uppercase;
-            white-space: nowrap;
-            letter-spacing: 1px;
-            z-index: -99;
-        }
-        .coursesBox h2{
-            font-size: 2.5em;
-            margin-top: 20px;
-            color: #002147;
-            font-family: Bahnschrift;
-        }
-        .coursesBox ul{
-            margin: 5px;
-            margin-left: 50px;
-            color: #262626;
-            font-size: 1.3em;
-        }
-        .coursesBox ul li::marker{
-            content: '❆ ';
-            font-weight: 800;
-        }
-
+      .box {
+        display: flex;
+        justify-content: center;
+      }
+      .coursesBox {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+      }
+      .coursesBox h1 {
+        margin: 20px 0px;
+        width: 100%;
+        font-size: 3em;
+        color: #002147;
+      }
+      .coursesBox h1::after {
+        content: "Courses Offered in university";
+        position: absolute;
+        top: 75px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 80px;
+        color: transparent;
+        -webkit-text-stroke: 1px #00214777;
+        text-transform: uppercase;
+        white-space: nowrap;
+        letter-spacing: 1px;
+        z-index: -99;
+      }
+      .coursesBox h2 {
+        font-size: 2.5em;
+        margin-top: 20px;
+        color: #002147;
+        font-family: Outfit;
+      }
+      .coursesBox ul {
+        margin: 5px;
+        margin-left: 50px;
+        color: #262626;
+        font-size: 1.3em;
+      }
+      .coursesBox ul li::marker {
+        content: "❆ ";
+        font-weight: 800;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav>
-        <img src="images/header.png">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a class="active" href="#">Courses</a></li>
-            <li><a href="departments.html">Departments</a></li>
-            <li><a href="placements.html">Placements</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
+      <img src="images/header.png" />
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="#">Courses</a></li>
+        <li><a href="departments.html">Departments</a></li>
+        <li><a href="placements.html">Placements</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
     </nav>
     <div class="box">
-        <div class="coursesBox">
-            <center><h1>Courses Offered in University</h1></center>
-            <h2>Post Graduate Courses: </h2>
-            <ul>
-                <li>Masters of Science (Electronic Media) [MSc(EM)]</li>
-                <li>Master of Arts (Mass Communication) [MA(MC)]</li>
-                <li>Master of Arts (Broadcast Journalism) [MA(BJ)]</li>
-                <li>Masters of Computer Application (MCA)</li>
-                <li>Master of Science (Information & Cyber Security) [M.Sc. (ICS)]</li>
-                <li>Master of Arts (Journalism) [MA(J)]</li>
-                <li>Master of Arts (Digital Journalism) [MA(DJ)]</li>
-                <li>Master of Business Administration (Media Business Management) [MBA(MBM)]</li>
-                <li>Master of Science (New Media) [MSc(NM)]</li>
-                <li>Master of Arts (Advertising & Public Relations) [MA(APR)]</li>
-                <li>Master of Science (Film Production) [MSc(FP)]</li>
-                <li>Master of Science (Media Research) [MSc(MR)]</li>
-                <li>Master of Philosophy (Media Studies) [MPhil(MS)]</li>
-                <li>Master of (Library & Information Sciences) [M(LIS)]</li>
-            </ul>
-            <h2>Under Graduate Courses: </h2>
-            <ul>
-                <li>Bachelor of Science (Electronic Media) [BSc(EM)]</li>
-                <li>Bachelor of Arts (Mass Communication) [BA(MC) (Honors)]</li>
-                <li>Bachelor of Computer Applications (BCA)</li>
-                <li>Bachelor of Arts (Journalism and Creative Writing) [BA(JCW)]</li>
-                <li>Bachelor of Business Administration (E-Commerce) [BBA(EC)]</li>
-                <li>Bachelor of Business Management (BBM) (Honors)</li>
-                <li>Bachelor of Science (Multimedia) [BSc(MM)] (Honors)</li>
-                <li>Bachelor of Science (Graphics & Animation) [BSc(GA)]</li>
-                <li>Bachelor of Technology (Printing & Packaging) [BTech(PP)]</li>
-                <li>Bachelor of Technology (Printing & Packaging)-Lateral Entry [BTech(PP)-LE]</li>
-                <li>Bachelor of Arts (Advertising & Public Relations) [BA(APR)] (Honors)</li>
-                <li>Bachelor of Library & Information Sciences (BLIS)</li>
-            </ul>
-        </div>
+      <div class="coursesBox">
+        <center><h1>Courses Offered in University</h1></center>
+        <h2>Post Graduate Courses:</h2>
+        <ul>
+          <li>Masters of Science (Electronic Media) [MSc(EM)]</li>
+          <li>Master of Arts (Mass Communication) [MA(MC)]</li>
+          <li>Master of Arts (Broadcast Journalism) [MA(BJ)]</li>
+          <li>Masters of Computer Application (MCA)</li>
+          <li>
+            Master of Science (Information & Cyber Security) [M.Sc. (ICS)]
+          </li>
+          <li>Master of Arts (Journalism) [MA(J)]</li>
+          <li>Master of Arts (Digital Journalism) [MA(DJ)]</li>
+          <li>
+            Master of Business Administration (Media Business Management)
+            [MBA(MBM)]
+          </li>
+          <li>Master of Science (New Media) [MSc(NM)]</li>
+          <li>Master of Arts (Advertising & Public Relations) [MA(APR)]</li>
+          <li>Master of Science (Film Production) [MSc(FP)]</li>
+          <li>Master of Science (Media Research) [MSc(MR)]</li>
+          <li>Master of Philosophy (Media Studies) [MPhil(MS)]</li>
+          <li>Master of (Library & Information Sciences) [M(LIS)]</li>
+        </ul>
+        <h2>Under Graduate Courses:</h2>
+        <ul>
+          <li>Bachelor of Science (Electronic Media) [BSc(EM)]</li>
+          <li>Bachelor of Arts (Mass Communication) [BA(MC) (Honors)]</li>
+          <li>Bachelor of Computer Applications (BCA)</li>
+          <li>Bachelor of Arts (Journalism and Creative Writing) [BA(JCW)]</li>
+          <li>Bachelor of Business Administration (E-Commerce) [BBA(EC)]</li>
+          <li>Bachelor of Business Management (BBM) (Honors)</li>
+          <li>Bachelor of Science (Multimedia) [BSc(MM)] (Honors)</li>
+          <li>Bachelor of Science (Graphics & Animation) [BSc(GA)]</li>
+          <li>Bachelor of Technology (Printing & Packaging) [BTech(PP)]</li>
+          <li>
+            Bachelor of Technology (Printing & Packaging)-Lateral Entry
+            [BTech(PP)-LE]
+          </li>
+          <li>
+            Bachelor of Arts (Advertising & Public Relations) [BA(APR)] (Honors)
+          </li>
+          <li>Bachelor of Library & Information Sciences (BLIS)</li>
+        </ul>
+      </div>
     </div>
 
     <footer>
-        <p>Copyright &copy; MCNUJC, Bhopal, 2022 | All Rights Reserved. </p>
+      <p>Copyright &copy; MCNUJC, Bhopal, 2022 | All Rights Reserved.</p>
     </footer>
-</body>
-
+  </body>
 </html>
