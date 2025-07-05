@@ -1,0 +1,36 @@
+name: Deploy to CE2 Instance
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Copy source files to CE2 instance
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.CE2_HOST }}
+          username: ${{ secrets.CE2_USER }}
+          password: ${{ secrets.CE2_PASSWORD }}
+          source: "."
+          target: "~/app"
+
+      - name: Deploy on CE2 instance
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.CE2_HOST }}
+          username: ${{ secrets.CE2_USER }}
+          password: ${{ secrets.CE2_PASSWORD }}
+          script: |
+            cd ~/app
+            docker build -t mcu-website:latest .
+            docker stop mcu-website || true
+            docker rm mcu-website || true
+            docker run -d --name mcu-website -p 80:80 mcu-website:latest
